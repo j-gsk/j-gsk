@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Orbitron&display=swap');
+
+@font-face{
+    font-family: "Booter - Zero Zero";
+    src:url("fonts/Booter - Zero Zero.woff") format("woff"),
+        url("fonts/BOOTERFZ.ttf") format("ttf"),
+        url("fonts/PatuaOne-Regular.ttf") format("ttf");        ;
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+    color: rgba(8, 8, 8, 0.9);
+}
+
+html, body {
+    background-color: rgba(50, 40, 20, .15);
+    margin: 0;
+    padding: 0;    
+    min-height: 100%;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("images/Smoke-Grenade Edit.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30;
+    }
+
+.nav ul {
+    margin: 0;
+ }
+
+.nav li{
+    display: inline;  
+    color: white;
+}
+
+.nav a{
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color:rgba(255, 255, 255, 0.4);
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.box{
+    height: 200px;
+    width: 300px;
+    background-color: rgba(50, 40, 20, .4);
+    padding: 40px;    
+    margin: 30px;
+    border: 20px solid black;
+}
+
+.band-name{    
+    text-align: center;    
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;    
+    color: white;  
+}
+
+.band-name-large{
+    font-size: 6em;
+}
+
+.content-section{
+    margin: 1em;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header{
+    font-family: Metal Mania;
+    text-align: center;
+    font-weight: normal;
+    color: #333;
+    font-size: 2.5em;
+}
+.about-band-image{
+    float: left;
+    height: 200px;
+    width: 200px;
+    border: 15px;
+    border-radius: 50%;
+}
+
+.main-footer{
+    background-color: rgba(50, 90, 190, .5);
+    color: white;
+    padding: .25em;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li{
+    padding: 0 0.5em;
+}
+
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+    }
+
+.button-general{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.button-header{
+    margin: .5em 15% .5em 15%;
+    color: white;
+    border: 2px solid hsl(204, 67%, 32%);
+    background-color: rgba(26, 9, 75, 0.33);
+    border-radius: 0;
+    font-size: 1.06em;
+    font-weight: lighter;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.button-header:hover{
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.button-play{
+    display: block;
+    margin: 0 auto;
+    color: cornflowerblue;
+    font-size: 2.6em;
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 0;
+    text-align: center;
+}
+
+.button-store{
+    color: white;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: .2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tour-button{
+    max-width: 19%;
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: .2em;
+}
+
+.tour-row{
+    border-bottom: solid grey;
+    padding: .5em;
+    margin: .5em;
+}
+.tour-row:last-child{
+    border-bottom: none;
+}
+
+.tour-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date{
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city{
+    width: 24%;
+}
+
+.tour-arena{
+    width: 42%;
+}
+
+.shop-item{
+    margin: 2em;
+}
+
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bolt;
+    font-size: 1.5em;
+    color: 333;
+    margin-bottom: 3px;
+    max-width: 250px;
+    height: 1.5em;
+
+}
+
+.shop-item-image{
+    width: 250px;  
+      
+}
+
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price{
+    flex: 1;
+    color: #333;
+    
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+    
+}
+
+.cart-row{
+    display: flex;
+}
+
+.cart-header{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1pt black;
+    margin-right: 1.5em;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cart-item{
+    width: 35%;
+}
+
+.cart-price{
+    width: 20%;
+    font-weight: bold;
+    size: 1.2em;
+    
+}
+
+.cart-quantity{
+    width: 45%;
+}
+
+.cart-item-image{
+    width: 70px;
+    height: auto;
+    margin-right: .5em;
+}
+
+.cart-item-title{
+    color: 333;
+    font-weight: bold;
+    size: 1.2em;
+    }
+
+.cart-quantity-input{
+    width: 40px;
+    height: 35px;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    border-radius: 5px;
+    border-color: cornflowerblue;
+    font-weight: bold;
+    size: 1.2em;
+    margin-right: 25px;
+}
+
+.button-remove{
+    border-radius: 5%;
+    font-weight: bold;
+    size: 1.2em;
+    border: none;
+    background-color:red;
+    color: white;
+}
+
+.button-remove:hover{
+    background-color:rgb(133, 23, 23);
+}
+
+.cart-row:last-child{
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column{
+    border-bottom: none;
+}
+
+.cart-total-row{
+    text-align: right;
+    margin-top: 1em;
+}
+.total-title{
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.total-price{
+    color: #333;
+    font-size: 1.1em;
+    font-weight: bold;
+   
+}
+
+.button-purchase{
+    display: block;
+    margin: 40px auto 70px auto;
+    font-size: 1.75em;
+}
